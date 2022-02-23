@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content *ngIf="user$ | async as user">
+    <ion-row>
+      <ion-col>
+        <h1>Welcome</h1>
+        <p><strong>{{user.email}}</strong></p>
+      </ion-col>
+    </ion-row>
+
+</ion-content>
